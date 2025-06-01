@@ -74,43 +74,164 @@ header, main, nav, footer {
     max-width: 450px;
     margin:0px auto;
     background-color: var(--purple);
+    padding:15px 0px;
+}
+a {
+    color:var(--teal);
 }
 h1 {
     font-size:3em;
     font-family:Kavoon, sans-serif;
     color:var(--white);
+    margin:5px;
 }
 h2 {
     font-family:Kavoon, sans-serif;
     font-size:2em;
     color:var(--white);
+    margin:10px 0px 10px 20px;
 }
 h3 {
     font-size:1.5em;
     color:var(--yellow);
     font-weight:bold;
+    margin:15px 0px 15px 20px;
 }
 h4 {
     font-size:1.15em;
     color:var(--purple);
     font-weight:bold;
+    line-height:2em;
+}
+p {
+    line-height:1.5em;
 }
 header {
     text-align:center;
+}
+header p {
+    font-size:0.9em;
+    color:var(--white);
+    font-style:italic;
 }
 nav {
     background-color:var(--yellow);
     text-align:center;
 }
-section {
+nav h2 {
+    color:var(--dark-gray);
+    text-transform:uppercase;
+    font-family:Inter, sans-serif;
+    font-weight:bold;
+    font-style:italic;
+    font-size:1.5em;
+}
+nav a {
+    display:block;
+    color:var(--purple);
     background-color:var(--white);
-    padding:20px;
-    margin:20px;
+    margin:12px 20px;
+    padding:15px;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+nav a:hover {
+    background-color:var(--purple);
+    color:var(--white);
+}
+.whitesection {
+    background-color:var(--white);
+    padding:25px;
+    margin:25px;
+    border-radius:15px;
 }
 .redsection {
     background-color:var(--pink);
-    margin:0;
+    padding:25px;
+}
+.redsection a {
+    display:block;
+    background-color:var(--white);
+    text-align:center;
+    text-transform:uppercase;
+    text-decoration:none;
+    padding:25px;
+    color:var(--dark-gray);
+    width:300px;
+    box-shadow: 7px 7px 5px var(--dark-gray);
+    margin:10px auto 0px auto;
+    border-radius:20px;
+    font-weight:bold;
+}
+.redsection h2, nav h2 {
+    margin:0px 0px 10px 0px;
 }
 .redsection p {
     color:var(--white);
+}
+.redsection a:hover {
+    background-color:var(--yellow);
+}
+.pricingsection {
+    padding:10px 0px;
+}
+main ul, footer ul {
+    display:flex;
+    flex-wrap:wrap;
+    text-align:center;
+}
+main li {
+    display:flex;
+    width:47%;
+    height:100px;
+    box-sizing:border-box;
+    align-items:center;
+    justify-content:center;
+    margin:5px 5px;
+    font-weight:bold;
+    font-size:1.2em;
+    line-height:1.2em;
+    border-radius:15px;
+}
+footer li {
+    display:flex;
+    font-size:0.8em;
+    width:50%;
+    color:var(--white);
+    align-items:center;
+    justify-content:center;
+    padding:10px 0px;
+}
+footer a {
+    color:var(--white);
+}
+.greenbg {
+    background-color:var(--teal);
+}
+.bluebg {
+    background-color:var(--lavender);
+}
+.yellowbg {
+    background-color:var(--yellow);
+}
+.whitebg {
+    background-color:var(--white);
+}
+table {
+    border:2px solid var(--yellow);
+    background-color:var(--white);
+    margin:0 auto;
+    width:250px;
+}
+th {
+    background-color:var(--yellow);
+    color:var(--dark-gray);
+    text-transform:uppercase;
+    font-weight:bold;
+    padding:15px;
+}
+td {
+    padding:15px;
+    border:2px solid var(--yellow);
 }
